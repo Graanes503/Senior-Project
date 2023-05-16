@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Player_processes",
+  "name": "player_processes",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

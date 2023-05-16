@@ -3,7 +3,7 @@
 damage = 5;
 range = 160;
 owner_id = noone;
-knockback_time = 5;
+knockback_time = 1;
 
  function arrow_die () {
 // what happens when arrow is detroyed

@@ -1,11 +1,24 @@
 /// @description Insert description here
+event_inherited();
+hp_max = 15;
+hp = hp_max;
 
-// when chasing player?
 alert = false;
 // distance when start to chase palyer
 alert_dis = 160;
 // set distance we stop from the player
-attack_dis = 18;
+attack_dis = 12;
+
+// the frame that attack is formed
+attack_frame = 6;
+// can we attack
+can_attack = true;
+// attack delay
+attack_cooldown = 75;
+// how much damage we deal
+damage = 2;
+//how long player is knockback for
+knockback_time = 10;
 // create path respurce 
 path = path_add();
 // speed we chase player
