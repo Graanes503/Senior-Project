@@ -1,5 +1,5 @@
-/// Notes ;   {Video 1 time: Finished								}
-
+/// Notes ;  
+// when first spawned in room 1
 function reset_variables() {
 left = 0;
 up = 0;
