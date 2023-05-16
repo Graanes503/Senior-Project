@@ -2,7 +2,7 @@
 // You can write your code in this editor
 event_inherited();
 walk_spd = 1.5;
-hp_max = 12;
+hp_max = 20;
 hp = hp_max;
 
 

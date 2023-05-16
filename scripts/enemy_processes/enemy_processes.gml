@@ -43,7 +43,7 @@ function check_for_player(){
 // Desc check for player when near enemy and chases them
 
 // ensure player is alive
-if o_player.state == states.DEAD exit;
+if o_player.state == states.DEAD exit; // error? as of 5/16/23 on different laptop
 
 var _dis = distance_to_object(o_player);
 
