@@ -43,7 +43,7 @@ function check_for_player(){
 // Desc check for player when near enemy and chases them
 
 // ensure player is alive
-if o_player.state == states.DEAD exit; // error? as of 5/16/23 on different laptop
+if o_player.state == states.DEAD exit; // 
 
 var _dis = distance_to_object(o_player);
 
@@ -81,12 +81,14 @@ function enemy_anim(){
 switch(state) {
 	case states.IDLE:
 		show_hurt();
-		sprite_index = s_idle;	
+		o_enemy.sprite_index = s_idle;	
+		
 	break ;
 	//
 	case states.MOVE:  
 		show_hurt();
-		sprite_index = s_walk;
+		o_enemy.sprite_index = s_walk;
+	
 	break;
 	//
 	case states.KNOCKBACK:
@@ -94,11 +96,13 @@ switch(state) {
 	break;
 	//
 	case states.ATTACK:
-		sprite_index = s_attack;
+		o_enemy.sprite_index = s_attack;
+		
 	break;
 	//
 	case states.DEAD:
-		sprite_index = s_dead;
+		o_enemy.sprite_index = s_dead;
+		
 	break;
 	}
 // set depth
@@ -125,7 +129,7 @@ function perform_attack() {
 	var _yy = y + lengthdir_y(attack_dis, _dir);
 	
 	//
-	var _inst = instance_create_layer( _xx, _yy, "Instances", o_enemy_hitbox)
+	var _inst = instance_create_layer( _xx, _yy, "Instances", o_enemy_hitbox);
 	_inst.owner_id = id;
 	_inst.damage = damage;
 	_inst.knockback_time = knockback_time;
@@ -133,7 +137,8 @@ function perform_attack() {
 	}
 }
 function show_hurt() {
-	if knockback_time-- > 0 sprite_index = s_hurt;
+	if knockback_time-- > 0 o_enemy.sprite_index = s_hurt;
+	
 
 	
 }

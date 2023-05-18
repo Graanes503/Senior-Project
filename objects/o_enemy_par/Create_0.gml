@@ -1,6 +1,6 @@
 /// @description Insert description here
 event_inherited();
-hp_max = 15;
+hp_max = 12;
 hp = hp_max;
 
 alert = false;

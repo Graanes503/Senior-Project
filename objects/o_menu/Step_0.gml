@@ -5,8 +5,8 @@ var _up = keyboard_check_pressed(vk_up);
 var _down = keyboard_check_pressed(vk_down);
 var _left = keyboard_check_pressed(vk_left);
 var _right = keyboard_check_pressed(vk_right);
-var _left_held = keyboard_check_pressed(vk_left);
-var _right_held = keyboard_check_pressed(vk_right);
+var _left_held = keyboard_check(vk_left);
+var _right_held = keyboard_check(vk_right);
 var _select = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space);
 
 // holding key down
@@ -15,7 +15,7 @@ var _repeat_delay = 25;
 
 if _right time_held_right = _repeat_delay;
 if time_held_right > 0 {
-time_held_right--;
+	time_held_right--;
 if time_held_right == 0 and _right_held {
 	_right = true;
 	time_held_right = _repeat_spd;
@@ -24,7 +24,7 @@ if time_held_right == 0 and _right_held {
 // holding left
 if _left time_held_left = _repeat_delay;
 if time_held_left > 0 {
-time_held_left--;
+	time_held_left--;
 if time_held_left == 0 and _left_held {
 	_left = true;
 	time_held_left = _repeat_spd;

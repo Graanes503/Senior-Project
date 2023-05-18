@@ -57,6 +57,7 @@ for  (var yy = 0; yy < _h; ++yy) {
 				
 				if random(1) <= 0.1 {
 					instance_create_layer(xx * TS + TS/2, yy * TS + TS/2, "Enemy" , o_enemy)
+				
 			}
 		}
 	}
