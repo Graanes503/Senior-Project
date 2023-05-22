@@ -82,13 +82,13 @@ switch(state) {
 	case states.IDLE:
 		show_hurt();
 		o_enemy.sprite_index = s_idle;	
-		
+		o_boss.sprite_index = s_idle_boss;
 	break ;
 	//
 	case states.MOVE:  
 		show_hurt();
 		o_enemy.sprite_index = s_walk;
-	
+		o_boss.sprite_index = s_walk_boss;
 	break;
 	//
 	case states.KNOCKBACK:
@@ -97,12 +97,12 @@ switch(state) {
 	//
 	case states.ATTACK:
 		o_enemy.sprite_index = s_attack;
-		
+		o_boss.sprite_index = s_attack_boss;
 	break;
 	//
 	case states.DEAD:
 		o_enemy.sprite_index = s_dead;
-		
+		o_boss.sprite_index = s_dead_boss;
 	break;
 	}
 // set depth
@@ -139,7 +139,8 @@ function perform_attack() {
 function show_hurt() {
 	if knockback_time-- > 0 o_enemy.sprite_index = s_hurt;
 	
-
+}
+function s_boss_heal() {
+	
 	
 }
-
