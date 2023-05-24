@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-hp_max = 12;
+hp_max = 200;
 hp = hp_max;
 
 alert = false;
@@ -15,7 +15,7 @@ can_attack = true;
 // attack delay
 attack_cooldown = 50
 // how much damage we deal
-damage = 5;
+damage = 3;
 //how long player is knockback for
 knockback_time = 30;
 // create path respurce 

@@ -5,7 +5,7 @@ switch(state) {
 		calc_entity_movement();
 		check_for_player();
 		if path_index != -1 state = states.MOVE;
-		enemy_anim();
+		Boss_anim();
 	break ;
 	//
 	case states.MOVE:  
@@ -13,23 +13,24 @@ switch(state) {
 		check_for_player();
 		check_facing();
 		if path_index == -1 state = states.IDLE;
-		enemy_anim();
+		Boss_anim();
 	break;
 	//
-	case states.KNOCKBACK:
-		calc_knockback_movement();
-		enemy_anim();
+	case states.HEAL:
+	check_for_player();
+	Boss_heal();
 	break;
+	//
 	case states.ATTACK:
 		calc_entity_movement();
 		perform_attack();
 		check_facing();
-		enemy_anim();
+		Boss_anim();
 	break;
 	//
 	case states.DEAD:
 		calc_entity_movement();
-		enemy_anim();
+		Boss_anim();
 	break;
 }
 

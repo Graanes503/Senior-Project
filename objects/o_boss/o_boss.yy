@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "o_boss",
   "spriteId": {
-    "name": "s_boss_idle",
-    "path": "sprites/s_boss_idle/s_boss_idle.yy",
+    "name": "s_boss_walk",
+    "path": "sprites/s_boss_walk/s_boss_walk.yy",
   },
   "solid": false,
   "visible": true,
@@ -35,7 +35,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Entity/Enemy.yy",
+    "name": "Boss",
+    "path": "folders/Entity/Boss.yy",
   },
 }
