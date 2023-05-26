@@ -74,13 +74,29 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				break;
 				case 2:
 					// Contols
-					
+					sub_menu = CONTROLS;
+					index = 0;
 				break;
 				case 3:
 					// Back
 					sub_menu = MAIN;
 					index = 1;
 				break;
+			}
+			break;
+		case CONTROLS:
+			switch(index) {
+				case 0:
+					// Controls
+				break;
+				case 6:
+				sub_menu = SETTINGS;
+				index = 0;
+				break;
+				
+				
+				
+			
 		}
 	}
 }

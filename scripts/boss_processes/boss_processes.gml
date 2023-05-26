@@ -31,7 +31,3 @@ function Boss_anim(){
 	}
 }
 
-function Boss_heal(){ 
-	
-	
-}

@@ -138,7 +138,3 @@ function show_hurt() {
 	if knockback_time-- > 0 o_enemy.sprite_index = s_hurt;
 	
 }
-function s_boss_heal() {
-	
-	
-}

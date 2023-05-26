@@ -33,7 +33,5 @@ s_idle_boss = s_boss_idle;
 s_walk_boss = s_boss_walk;
 s_attack_boss = s_boss_attack;
 s_dead_boss = s_boss_dead;
-s_hurt_boss = s_boss_hurt;
-s_heal_boss = s_boss_heal;
 
 
