@@ -83,8 +83,12 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 					index = 1;
 				break;
 			}
+<<<<<<< HEAD
 					break;
 			
+=======
+			break;
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4
 		case CONTROLS:
 			switch(index) {
 				case 0:
@@ -94,8 +98,15 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				sub_menu = SETTINGS;
 				index = 0;
 				break;
+<<<<<<< HEAD
 				}
 			}
+=======
+				
+				
+				
+			
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4
 		}
 function change_menu(_move, _key) {
 // desc		change the ds map key entry by the move value passed 

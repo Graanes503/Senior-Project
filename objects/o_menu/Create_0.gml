@@ -35,4 +35,13 @@ menu[CONTROLS][6] = "Back";
 index = 0; // menu index position
 sub_menu = 0; //current sub menu
 
+// control menu
+menu[CONTROLS][0] = "Controls";
+menu[CONTROLS][1] = "Move Up = W";
+menu[CONTROLS][2] = "Move left = A";
+menu[CONTROLS][3] = "Move Right = D";
+menu[CONTROLS][4] = "Move Down = S";
+menu[CONTROLS][5] = "Shoot Bow = Left Click";
+menu[CONTROLS][6] = "Back";
+
 

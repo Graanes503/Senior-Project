@@ -34,6 +34,15 @@ calc_path_delay = 30;
 // set timer for when we calc a path
  calc_path_timer = irandom(60);
 //
+<<<<<<< HEAD
 
+=======
+event_inherited();
+//
+s_idle_boss = s_boss_idle;
+s_walk_boss = s_boss_walk;
+s_attack_boss = s_boss_attack;
+s_dead_boss = s_boss_dead;
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4
 
 

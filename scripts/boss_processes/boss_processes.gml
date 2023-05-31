@@ -27,4 +27,7 @@ function boss_anim(){
 	}
 }
 
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4

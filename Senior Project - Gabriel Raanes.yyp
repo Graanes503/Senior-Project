@@ -45,7 +45,11 @@
     {"id":{"name":"Hitmarker","path":"sounds/Hitmarker/Hitmarker.yy",},"order":0,},
     {"id":{"name":"s_playeridle","path":"sprites/s_playeridle/s_playeridle.yy",},"order":3,},
     {"id":{"name":"t_wall_32x32","path":"tilesets/t_wall_32x32/t_wall_32x32.yy",},"order":0,},
+<<<<<<< HEAD
     {"id":{"name":"s_boss_attack","path":"sprites/s_boss_attack/s_boss_attack.yy",},"order":5,},
+=======
+    {"id":{"name":"s_boss_attack","path":"sprites/s_boss_attack/s_boss_attack.yy",},"order":4,},
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4
     {"id":{"name":"enemy_processes","path":"scripts/enemy_processes/enemy_processes.yy",},"order":1,},
     {"id":{"name":"o_warp","path":"objects/o_warp/o_warp.yy",},"order":3,},
     {"id":{"name":"o_enemy_par","path":"objects/o_enemy_par/o_enemy_par.yy",},"order":6,},
@@ -76,7 +80,11 @@
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Control","folderPath":"folders/Control.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Entity","folderPath":"folders/Entity.yy","order":5,},
+<<<<<<< HEAD
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss","folderPath":"folders/Entity/Boss.yy","order":2,},
+=======
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boss","folderPath":"folders/Entity/Boss.yy","order":3,},
+>>>>>>> 1adddca52def8e22c3d145a1af0d64e9ecb688a4
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy","folderPath":"folders/Entity/Enemy.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Player","folderPath":"folders/Entity/Player.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy","order":8,},
