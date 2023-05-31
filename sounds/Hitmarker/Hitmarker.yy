@@ -1,9 +1,9 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "Sounds",
+  "name": "Hitmarker",
   "conversionMode": 0,
-  "compression": 0,
+  "compression": 1,
   "volume": 1.0,
   "preload": false,
   "bitRate": 512,
@@ -14,7 +14,7 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "Sounds.mp3",
+  "soundFile": "Hitmarker.mp3",
   "duration": 0.600816,
   "parent": {
     "name": "Sounds",

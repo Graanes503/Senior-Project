@@ -24,6 +24,6 @@ menu[SETTINGS][2] = "Controls";
 menu[SETTINGS][3] = "Back";
 
 index = 0; // menu index position
-sub_menu = 0; //currwnt sub menu
+sub_menu = 0; //current sub menu
 
 

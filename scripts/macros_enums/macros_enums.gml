@@ -11,5 +11,5 @@ enum states {
 	ATTACK,
 	DEAD,
 	KNOCKBACK,
-	HEAL,
+	
 }

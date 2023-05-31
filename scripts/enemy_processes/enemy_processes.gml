@@ -33,83 +33,78 @@ function calc_knockback_movement() {
 
 function check_facing(){
 	if knockback_time <= 0 {
-	// desc check which way we are moving and set facing
-	var _facing = sign(x - xp);
-	if _facing != 0 facing = _facing;
+		// desc check which way we are moving and set facing
+		var _facing = sign(x - xp);
+		if (_facing != 0) facing = _facing;
 	}
 }
 
 function check_for_player(){
-// Desc check for player when near enemy and chases them
+	// Desc check for player when near enemy and chases them
 
-// ensure player is alive
-if o_player.state == states.DEAD exit; // 
+	// ensure player is alive
+	if o_player.state == states.DEAD exit; // 
 
-var _dis = distance_to_object(o_player);
+	var _dis = distance_to_object(o_player);
 
-// can we start chasing? or are we already alert and out of attack dis?
-if (( _dis <= alert_dis) or alert) and _dis > attack_dis {
-// enemy is now alert
-alert = true; 
+	// can we start chasing? or are we already alert and out of attack dis?
+	if (( _dis <= alert_dis) or alert) and _dis > attack_dis {
+		// enemy is now alert
+		alert = true; 
 
-// should we calc our path
-if calc_path_timer-- <= 0 {
-	// reset timer
-	calc_path_timer = calc_path_delay;
+		// should we calc our path
+		if calc_path_timer-- <= 0 {
+			// reset timer
+			calc_path_timer = calc_path_delay;
 	
-	
-// can we make a path to the player
-if x == xp and y == yp var _type = 0 else var _type = 1;
-var _found_player = mp_grid_path(global.mp_grid, path, x, y, o_player.x, o_player.y, _type);
+			// can we make a path to the player
+			if x == xp and y == yp var _type = 0 else var _type = 1;
+			var _found_player = mp_grid_path(global.mp_grid, path, x, y, o_player.x, o_player.y, _type);
 
-// start path if we can reach the player
-if _found_player {
-	path_start(path, move_spd, path_action_stop, false);
-						}
-				}
-		} else {
-			// are we close enough to attack 
-			if _dis <= attack_dis{
-				path_end();
-				state = states.ATTACK
-			}
+			// start path if we can reach the player
+			if _found_player {	
+				path_start(path, move_spd, path_action_stop, false);
+			}	
 		}
-}		
+	} else {
+		// are we close enough to attack 
+		if _dis <= attack_dis{
+			path_end();
+			state = states.ATTACK
+		}
+	}
+}
 
 function enemy_anim(){
 	//
-switch(state) {
-	case states.IDLE:
-		show_hurt();
-		o_enemy.sprite_index = s_idle;	
-		
-	break ;
-	//
-	case states.MOVE:  
-		show_hurt();
-		o_enemy.sprite_index = s_walk;
-		
-	break;
-	//
-	case states.KNOCKBACK:
-		show_hurt();
-	break;
-	//
-	case states.ATTACK:
-		o_enemy.sprite_index = s_attack;
-	break;
-	//
-	case states.DEAD:
-		o_enemy.sprite_index = s_dead;
-	break;
+	switch(state) {
+		case states.IDLE:
+			show_hurt();
+			o_enemy.sprite_index = s_idle;	
+		break ;
+		//
+		case states.MOVE:  
+			show_hurt();
+			o_enemy.sprite_index = s_walk;
+		break;
+		//
+		case states.KNOCKBACK:
+			show_hurt();
+		break;
+		//
+		case states.ATTACK:
+			o_enemy.sprite_index = s_attack;
+		break;
+		//
+		case states.DEAD:
+			o_enemy.sprite_index = s_dead;
+		break;
 	}
-// set depth
-depth = -bbox_bottom;
-// update previous position
-xp = x;
-yp = y;
-
-
+	// set depth
+	depth = -bbox_bottom;
+	// update previous position
+	xp = x;
+	yp = y;
 }
 function perform_attack() {
 	// attack player when we are at the corrected frame
@@ -136,9 +131,5 @@ function perform_attack() {
 }
 function show_hurt() {
 	if knockback_time-- > 0 o_enemy.sprite_index = s_hurt;
-	
-}
-function s_boss_heal() {
-	
 	
 }

@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemy",
-    "path": "folders/Entity/Enemy.yy",
+    "name": "Boss",
+    "path": "folders/Entity/Boss.yy",
   },
 }
