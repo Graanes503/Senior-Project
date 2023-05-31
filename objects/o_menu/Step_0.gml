@@ -70,21 +70,33 @@ if _select or (is_array(menu[sub_menu][index]) and (_hmove != 0)){
 				break;
 				case 1:
 					//Music
-						change_menu(_hmove, "music");
+					change_menu(_hmove, "music");
 				break;
 				case 2:
 					// Contols
-					
+					sub_menu = CONTROLS;
+					index = 0;
 				break;
 				case 3:
 					// Back
 					sub_menu = MAIN;
 					index = 1;
 				break;
+			}
+					break;
+			
+		case CONTROLS:
+			switch(index) {
+				case 0:
+					// Controls
+				break;
+				case 6:
+				sub_menu = SETTINGS;
+				index = 0;
+				break;
+				}
+			}
 		}
-	}
-}
-
 function change_menu(_move, _key) {
 // desc		change the ds map key entry by the move value passed 
 // _move	real	which way to move the selection

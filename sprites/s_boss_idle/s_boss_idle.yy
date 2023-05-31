@@ -31,7 +31,6 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1a90f233-2d26-405e-a2fb-d7ee36dd31ec",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"26e41b22-c600-446d-bbdd-9aaeb075c6b8",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f2ac360-dba7-441f-afc0-9bacd91f0aca",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e7dea899-6cda-475d-b5c7-c7a8a95cf5ab",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -43,7 +42,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 4.0,
+    "length": 3.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -51,7 +50,6 @@
             {"id":"646def45-2cab-42bb-ba58-48fdbe4208e0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1a90f233-2d26-405e-a2fb-d7ee36dd31ec","path":"sprites/s_boss_idle/s_boss_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3d90cf96-d986-4697-8185-9b2fa1fe9848","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"26e41b22-c600-446d-bbdd-9aaeb075c6b8","path":"sprites/s_boss_idle/s_boss_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"7466ecce-4480-4056-8673-31863f22f4cd","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f2ac360-dba7-441f-afc0-9bacd91f0aca","path":"sprites/s_boss_idle/s_boss_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"46b3fb35-3553-415a-92dc-90dcf026e2e9","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e7dea899-6cda-475d-b5c7-c7a8a95cf5ab","path":"sprites/s_boss_idle/s_boss_idle.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
